@@ -91,7 +91,7 @@
             self.fields['completed'].widget.attrs.update({'class': 'form-check-input'})
 
         class RegisterForm(UserCreationForm):
-        # RegisterForm наследуется от UserCreationForm, которая представляет собой стандартную форму Django для создания нового пользователя. Она включает поля для имени пользователя и пароля, а также встроенные проверки.
+        RegisterForm наследуется от UserCreationForm, которая представляет собой стандартную форму Django для создания нового пользователя. Она включает поля для имени пользователя и пароля, а также встроенные проверки.
             email = forms.EmailField(required=True)
             # поле email, которое не входит в стандартный набор полей UserCreationForm. Это поле является обязательным (required=True), и его тип — EmailField, что обеспечивает автоматическую проверку введенного значения на соответствие формату электронной почты.
 
